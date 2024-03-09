@@ -7,7 +7,7 @@ import seaborn as sns
 
 st.sidebar.title("Whatsapp Chat Analyzer")
 
-uploaded_file = st.sidebar.file_uploader("Choose File")
+uploaded_file = st.sidebar.file_uploader("Choose File", type="txt")
 if uploaded_file is None:
     st.title("Upload a whatsapp file to analyze")
     breakpoint()
